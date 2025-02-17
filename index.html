@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kommie-keeb – Custom Keyboard by Souptik Samanta</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem 0;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    header h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 0;
+      background: #fff;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.75rem;
+    }
+    section p, section ul {
+      max-width: 800px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+    section ul {
+      list-style: disc;
+      margin-left: 2rem;
+    }
+    /* Gallery/Slider Styling */
+    .slider {
+      position: relative;
+      max-width: 800px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border: 5px solid #ddd;
+      border-radius: 5px;
+    }
+    .slider img {
+      width: 100%;
+      display: block;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kommie-keeb</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#bom">BOM</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Kommie-keeb</h2>
+        <p>
+          Kommie-keeb is a custom keyboard designed and built by Souptik Samanta.
+          Crafted with precision and passion, it features a unique ANSI layout and
+          high-quality components for a superior typing experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="slider">
+          <img id="sliderImage" src="img/image.png" alt="Kommie-keeb view" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Bill of Materials Section -->
+    <section id="bom">
+      <div class="container">
+        <h2>Bill of Materials (BOM)</h2>
+        <ul>
+          <li><strong>Display:</strong> SSD1306 OLED Display, 0.96", I2C interface</li>
+          <li><strong>Switches:</strong> Cherry MX Mechanical Switches (88 pcs)</li>
+          <li>
+            <strong>Keycaps & Layout:</strong> ANSI layout featuring various key sizes
+          </li>
+          <li>
+            <strong>Stabilizers:</strong> For oversized keys such as Backspace, Enter, and Shifts
+          </li>
+          <li>
+            <strong>Passive Components:</strong> Resistors (4.7kΩ, 5.1kΩ) and LEDs
+          </li>
+          <li>
+            <strong>Connectors & PCB:</strong> USB-C connector and custom PCB ("Soup_pad")
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact & Credits</h2>
+        <p>Created by <strong>Souptik Samanta</strong></p>
+        <ul>
+          <li>Website: <a href="https://souptik.me" target="_blank">souptik.me</a></li>
+          <li>
+            GitHub: <a href="https://github.com/souptik-samanta" target="_blank">souptik-samanta</a>
+          </li>
+          <li>
+            Instagram:
+            <a href="https://instagram.com/souptik.me" target="_blank">@souptik.me</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Souptik Samanta. All rights reserved. (souptik.me)</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple image slider functionality
+    const images = [
+      "img/image.png",
+      "img/image-1.png",
+      "img/image-2.png",
+      "img/image-3.png",
+      "img/image-4.png",
+      img/image (17).png,
+      img/image (16).png
+    ];
+    let currentImageIndex = 0;
+    const sliderImage = document.getElementById("sliderImage");
+
+    function changeImage() {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      sliderImage.src = images[currentImageIndex];
+    }
+    // Change image every 3 seconds
+    setInterval(changeImage, 3000);
+  </script>
+</body>
+</html>
