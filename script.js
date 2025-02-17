@@ -17,6 +17,7 @@ const images = [
   "./img/image.png",
   "./img/wholething.png",
   "./img/image-1.png",
+"./img/image (16).png",
   "./img/image-3.png",
   "./img/image-4.png",
   "./img/image (17).png",
